@@ -1,4 +1,26 @@
+# Chapter 7: Series Deep Dive
+## Notes 
 
+The read_csv function can accept not only URLs but also Zip files, we can use this function because this ZIP files contains only a single file.
+
+the pandas library provide a lot of methods for the data, and we can find it by running this code 
+
+```python
+dir(city_mpg)#with city_mpg being a series
+```
+
+There are categories:
+
+- Dunder methods
+- numeric operations
+- aggregate methods (.mean,.max.sum etc)
+- conversion methods (starts with .to_)
+- string manipulation (begin with .str.)
+- date manipulation (begin with .dt.)
+- Transformation methods
+
+
+## Exercises 
 1. Explore the documentation for five attributes of a series from Jupyter
 
 I found these 5:
