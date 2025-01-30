@@ -1,10 +1,13 @@
 # Chapter 13 : String Manipulation
 
+We can use the astype method to convert from objetc to string[pyarrow]
+
 if you stored string in a series the underlying type of the series was an object before pandas 2.0, right now if you have a series with numbers and strings the type is also an object.
 
 Pandas 2.0 with the integration of PyArrow introduced the new pd.ArroDtype(pa.string()) it’s explicit and it supports also missing values that are not NaN, the PyArrow version uses less memory and its supports a lot of methods, however, it lacks support for the older methods.
 
 If you have low cardinality string columns using categorical type is the most efficient way, because the operations are done only on the individual categories and not on each value.
+
 
 ### Str Accessor
 
