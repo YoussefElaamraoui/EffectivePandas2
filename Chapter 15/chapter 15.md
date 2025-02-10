@@ -47,3 +47,18 @@ series.shift(1)
 # or backwards
 series.shift(-1)
 ```
+
+
+
+### Resampling data
+
+If you want to calculate for example values for each month or another interval you can use the resample method
+
+
+```python
+# ME means end of the month, you can do 2ME, which means every two months and then using the 
+# estimates of locations (mean, median) as you please or any other method
+data.resample('ME').mean()
+```
+
+

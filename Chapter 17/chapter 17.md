@@ -21,7 +21,7 @@ if you want to preserve the order you just have to do:
 make.astype('category').cat.as_ordered()
 ```
 
-as you can see there it is also a cat attribute
+as you can see there it is also a cat accessor
 
 ### Generalization
 
